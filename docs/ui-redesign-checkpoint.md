@@ -141,3 +141,9 @@
 - Updated the deployment plan to require seeding the demo dataset only into a fresh Neon database after migrations. The existing local SQLite DB remains excluded and must not be imported into production.
 - Git Credential Manager reports the authenticated GitHub account `VVIISSHHEESSHH`. Reviewed 115 staged paths; no `.env`, local DB, virtual environment, or `node_modules` paths were included. Committed as `a4aff19` (`Prepare AgriEdge for deployment`) and pushed to `origin/main`; verified the remote branch points to that commit. GitHub CLI and Render CLI are unavailable. Neon provisioning and Render Blueprint sync still require provider dashboard access; no public deployment has occurred.
 
+## 12. Vercel FastAPI Entrypoint Fix (October 18, 2026)
+- Vercel runtime investigation: there are no Vercel configuration files or app references to `vc_handler`/`vercel_runtime` in the repository. The existing app is exported from `backend/app/main.py`, while the deployed backend project's Vercel root needs a conventional recognized entry module.
+- Added `backend/main.py` to re-export the existing FastAPI `app` without changing routes, middleware, or dependencies. Kept the existing Python version/dependency pins; current Vercel docs list Python 3.12 as supported.
+- Verified `from main import app` from the backend root and confirmed the export is a FastAPI instance; backend pytest suite exited 0 (32 tests, progress output confirmed successful completion). No frontend build was run because frontend files/dependencies are unchanged.
+- Commit and push pending.
+
