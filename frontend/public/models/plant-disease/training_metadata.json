@@ -1,0 +1,27 @@
+{
+  "model_name": "AgriEdge Tomato Disease Classifier",
+  "version": "1.0.0",
+  "format": "TensorFlow Lite",
+  "architecture": "MobileNetV2",
+  "input_shape": [
+    1,
+    224,
+    224,
+    3
+  ],
+  "color_mode": "RGB",
+  "normalization": "pixel values scaled to [0, 1]",
+  "classes": [
+    "Tomato_Bacterial_spot",
+    "Tomato_Early_blight",
+    "Tomato_Late_blight",
+    "Tomato_Leaf_Mold",
+    "Tomato_Septoria_leaf_spot",
+    "Tomato_Spider_mites_Two_spotted_spider_mite",
+    "Tomato__Target_Spot",
+    "Tomato__Tomato_YellowLeaf__Curl_Virus",
+    "Tomato__Tomato_mosaic_virus",
+    "Tomato_healthy"
+  ],
+  "validation_accuracy": 0.9247345328330994
+}

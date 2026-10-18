@@ -1,0 +1,16 @@
+# ── AgriEdge Backend — Production Dependencies ──────────────────────────────
+# Already installed on this system (pinned for reproducibility):
+fastapi==0.138.1
+uvicorn[standard]==0.49.0
+pydantic==2.13.4
+pydantic-settings==2.15.0
+python-multipart==0.0.32
+pillow==12.2.0
+httpx==0.28.1
+
+# New installs required for Phase 1:
+sqlalchemy[asyncio]==2.0.41   # Async ORM (SQLite dev / PostgreSQL prod)
+aiosqlite==0.20.0             # Async SQLite driver for dev / test
+asyncpg==0.32.0               # PostgreSQL async driver (Neon production)
+alembic==1.16.1               # DB schema migrations
+python-jose[cryptography]==3.5.0  # JWT (demo auth — extensible to OAuth2)

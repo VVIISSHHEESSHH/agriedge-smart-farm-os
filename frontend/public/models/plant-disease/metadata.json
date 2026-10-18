@@ -1,0 +1,114 @@
+{
+  "model_name": "PlantVillage Tomato Disease Classifier (MobileNetV2)",
+  "version": "1.0.0",
+  "architecture": "MobileNetV2",
+  "input_shape": [1, 224, 224, 3],
+  "color_mode": "RGB",
+  "normalization": "[0, 1] range (pixel / 255.0)",
+  "dataset": "PlantVillage (Tomato leaf disease subset)",
+  "dataset_license": "CC0 1.0 Universal (Public Domain)",
+  "classes_count": 10,
+  "confidence_threshold": 0.55,
+  "classes": [
+    {
+      "index": 0,
+      "key": "Tomato___Bacterial_spot",
+      "display_name_en": "Tomato: Bacterial Spot",
+      "display_name_hi": "टमाटर: जीवाणु धब्बा (Bacterial Spot)",
+      "is_healthy": false,
+      "severity": "medium",
+      "guidance_en": "Apply copper-based bactericides early in the morning. Avoid overhead watering to prevent bacterial splash onto healthy leaves.",
+      "guidance_hi": "सुबह तांबे आधारित जीवाणुनाशक का छिड़काव करें। स्वस्थ पत्तियों पर पानी के छींटे पड़ने से बचाने के लिए ऊपर से पानी देने से बचें।"
+    },
+    {
+      "index": 1,
+      "key": "Tomato___Early_blight",
+      "display_name_en": "Tomato: Early Blight",
+      "display_name_hi": "टमाटर: अगेती झुलसा (Early Blight)",
+      "is_healthy": false,
+      "severity": "medium",
+      "guidance_en": "Prune lower infected leaves. Apply Mancozeb or Chlorothalonil preventative fungicide. Ensure good plant spacing for air circulation.",
+      "guidance_hi": "संक्रमित निचली पत्तियों को काटें। मैंकोजेब या क्लोरोथैलोनिल फफूंदनाशक का छिड़काव करें। पौधों के बीच पर्याप्त हवादार दूरी रखें।"
+    },
+    {
+      "index": 2,
+      "key": "Tomato___Late_blight",
+      "display_name_en": "Tomato: Late Blight",
+      "display_name_hi": "टमाटर: पछेती झुलसा (Late Blight)",
+      "is_healthy": false,
+      "severity": "high",
+      "guidance_en": "High-urgency fungal infection. Immediately destroy severely blighted plants. Apply systemic fungicides like Metalaxyl or Cymoxanil.",
+      "guidance_hi": "गंभीर फफूंद संक्रमण। अत्यधिक प्रभावित पौधों को तुरंत नष्ट करें। मेटालेक्सिल या साइमोक्सानिल जैसे कवकनाशी का प्रयोग करें।"
+    },
+    {
+      "index": 3,
+      "key": "Tomato___Leaf_Mold",
+      "display_name_en": "Tomato: Leaf Mold",
+      "display_name_hi": "टमाटर: पत्ती फफूंद (Leaf Mold)",
+      "is_healthy": false,
+      "severity": "low",
+      "guidance_en": "Reduce humidity around canopy. Improve ventilation in polyhouses. Treat with sulfur or copper fungicides.",
+      "guidance_hi": "फसल के आसपास आर्द्रता कम करें। वेंटिलेशन में सुधार करें। सल्फर या तांबे के कवकनाशी से उपचार करें।"
+    },
+    {
+      "index": 4,
+      "key": "Tomato___Septoria_leaf_spot",
+      "display_name_en": "Tomato: Septoria Leaf Spot",
+      "display_name_hi": "टमाटर: सेप्टोरिया पत्ती धब्बा",
+      "is_healthy": false,
+      "severity": "medium",
+      "guidance_en": "Remove infected bottom foliage. Avoid overhead sprinkler irrigation. Apply protective chlorothalonil fungicide.",
+      "guidance_hi": "संक्रमित पत्तियों को हटा दें। फव्वारा सिंचाई से बचें। सुरक्षात्मक क्लोरोथैलोनिल का छिड़काव करें।"
+    },
+    {
+      "index": 5,
+      "key": "Tomato___Spider_mites Two-spotted_spider_mite",
+      "display_name_en": "Tomato: Two-Spotted Spider Mite",
+      "display_name_hi": "टमाटर: लाल मकड़ी (Spider Mite)",
+      "is_healthy": false,
+      "severity": "medium",
+      "guidance_en": "Wash leaf undersides with high-pressure water spray. Introduce predatory mites or apply neem oil / miticide spray.",
+      "guidance_hi": "पत्तियों के निचले हिस्से को पानी के तेज स्प्रे से धोएं। नीम का तेल या माइटिसाइड का छिड़काव करें।"
+    },
+    {
+      "index": 6,
+      "key": "Tomato___Target_Spot",
+      "display_name_en": "Tomato: Target Spot",
+      "display_name_hi": "टमाटर: लक्षित धब्बा (Target Spot)",
+      "is_healthy": false,
+      "severity": "medium",
+      "guidance_en": "Maintain consistent fungicide application. Ensure crop rotation with non-solanaceous crops.",
+      "guidance_hi": "नियमित कवकनाशी प्रयोग जारी रखें। गैर-सोलानेसी फसलों के साथ फसल चक्र अपनाएं।"
+    },
+    {
+      "index": 7,
+      "key": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "display_name_en": "Tomato: Yellow Leaf Curl Virus (TYLCV)",
+      "display_name_hi": "टमाटर: पीली पत्ती कुंचन वायरस (TYLCV)",
+      "is_healthy": false,
+      "severity": "high",
+      "guidance_en": "Transmitted by whiteflies. Control whitefly populations using yellow sticky traps and systemic insecticides like Imidacloprid.",
+      "guidance_hi": "सफेद मक्खी द्वारा फैलता है। पीले चिपचिपे जाल और कीटनाशक (इमिडाक्लोप्रिड) द्वारा सफेद मक्खियों को नियंत्रित करें।"
+    },
+    {
+      "index": 8,
+      "key": "Tomato___Tomato_mosaic_virus",
+      "display_name_en": "Tomato: Tomato Mosaic Virus (ToMV)",
+      "display_name_hi": "टमाटर: मोज़ेक वायरस (ToMV)",
+      "is_healthy": false,
+      "severity": "high",
+      "guidance_en": "Mechanically transmitted viral infection. Sanitize pruning tools with trisodium phosphate. Immediately rogue out and burn infected plants.",
+      "guidance_hi": "उपकरणों से फैलने वाला वायरस। औजारों को रोगाणुरहित करें। संक्रमित पौधों को तुरंत उखाड़कर जला दें।"
+    },
+    {
+      "index": 9,
+      "key": "Tomato___healthy",
+      "display_name_en": "Tomato: Healthy Foliage",
+      "display_name_hi": "टमाटर: स्वस्थ पत्ती (Healthy)",
+      "is_healthy": true,
+      "severity": "none",
+      "guidance_en": "No disease symptoms detected. Continue balanced fertilization and regular preventive monitoring.",
+      "guidance_hi": "कोई रोग लक्षण नहीं पाया गया। संतुलित खाद और नियमित निगरानी जारी रखें।"
+    }
+  ]
+}

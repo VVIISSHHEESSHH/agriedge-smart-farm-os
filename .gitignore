@@ -1,0 +1,68 @@
+# Dependencies and local runtimes
+node_modules/
+.venv/
+env/
+venv/
+ENV/
+**/node_modules/
+**/.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Local databases and SQLite sidecars
+*.db
+*.sqlite
+*.sqlite3
+*.db-*
+*.sqlite-*
+
+# Environment files
+.env*
+**/.env*
+
+# Vite / Frontend build
+frontend/dist/
+frontend/dist-ssr/
+*.local
+
+# Logs
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE & OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

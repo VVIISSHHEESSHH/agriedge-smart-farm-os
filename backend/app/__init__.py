@@ -1,0 +1,1 @@
+# AgriEdge backend application package
